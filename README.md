@@ -16,7 +16,8 @@ Built with HTML, CSS, JS (Vanilla).
 
 ## Screenshots 
 
-### Dashboard (screenshots/image1.png)
+### Dashboard (click to view full size)
+[![Dashboard](screenshots/image1.png)](screenshots/image1.png)
 
 ## Reflection
 If given more time: improve styling, add infinite scroll & server backend.
