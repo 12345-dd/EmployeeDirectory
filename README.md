@@ -1,4 +1,4 @@
-# Employee Directory
+## Employee Directory
 
 **Frontend Assignment**  
 Built with HTML, CSS, JS (Vanilla).
