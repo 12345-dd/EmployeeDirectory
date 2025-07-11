@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Employee Directory</h1>
+    <div class="controls">
+      <select id="sortSelect">
+        <option value="">--Select--</option>
+        <option value="firstName">First Name</option>
+        <option value="department">Department</option>
+      </select>
+      <select id="showSelect">
+        <option value="10">Show: 10</option>
+        <option value="25">Show: 25</option>
+        <option value="50">Show: 50</option>
+        <option value="100">Show: 100</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search by name or email" />
+      <button id="filterBtn">Filter</button>
+      <a href="form.html"><button class="addBtn">Add Employee</button></a>
+    </div>
+  </header>
+
+  <main>
+    <div id="employeeList" class="employee-list"></div>
+    <div id="pagination"></div>
+  </main>
+
+  <aside id="filterSidebar" class="filter-sidebar hidden">
+    <h3>Filter Employees</h3>
+    <label>First Name:</label>
+    <input type="text" id="filterFirstName" />
+    <label>Department:</label>
+    <input type="text" id="filterDepartment" />
+    <label>Role:</label>
+    <input type="text" id="filterRole" />
+    <button id="applyFilter">Apply</button>
+    <button id="resetFilter">Reset</button>
+  </aside>
+
+  <footer>
+    <p>© 2025 Employee Directory App. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

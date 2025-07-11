@@ -1,0 +1,191 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0 0 15px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls input,
+.controls select {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.controls button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.addBtn {
+  background: #28a745;
+  color: #fff;
+}
+
+#filterBtn {
+  background: #007bff;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.employee-card {
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.employee-card button {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  max-width: 80%;
+  border-left: 1px solid #ccc;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+.filter-sidebar.hidden {
+  display: none;
+}
+
+.filter-sidebar label {
+  display: block;
+  margin-top: 10px;
+}
+
+.filter-sidebar input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+.filter-sidebar button {
+  margin-top: 10px;
+  width: 48%;
+  padding: 8px;
+}
+
+#pagination {
+  margin: 20px 0;
+}
+
+#pagination button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#pagination button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls input,
+  .controls select,
+  .controls button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .employee-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .filter-sidebar {
+    top: 120px;
+    width: 220px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls input,
+  .controls select,
+  .controls button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .employee-list {
+    display: block; /* 👈 FORCE block layout */
+  }
+
+  .employee-card {
+    width: 100%;
+    margin-bottom: 20px; /* Add some spacing between cards */
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    max-width: none;
+    left: 0;
+    right: 0;
+    top: 70px;
+    border-left: none;
+    border-top: 2px solid #007bff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+}
+
