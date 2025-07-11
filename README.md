@@ -14,5 +14,9 @@ Built with HTML, CSS, JS (Vanilla).
 - `localStorage` saves your employees locally.
 - Open `dashboard.html`.
 
+## Screenshots 
+
+### Dashboard (screenshots/image1.png)
+
 ## Reflection
 If given more time: improve styling, add infinite scroll & server backend.
