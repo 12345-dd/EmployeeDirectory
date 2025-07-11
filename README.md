@@ -26,4 +26,4 @@ Built with HTML, CSS, JS (Vanilla).
 [![Dashboard with Filter](screenshots/image3.png)](screenshots/image3.png)
 
 ## Reflection
-If given more time: improve styling, add infinite scroll & server backend.
+If given more time: improve styling
